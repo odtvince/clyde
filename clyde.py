@@ -10,7 +10,7 @@ class Pong(restful.Resource):
        json['data'][0]['status'] = 'received_by_taxi'
        return json
 
-api.add_resource(Pong, '/hail/')
+api.add_resource(Pong, '/hails/')
 
 if __name__ == '__main__':
     app.run(debug=True, port=5001)
